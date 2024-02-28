@@ -1,0 +1,25 @@
+HTML:
+-boilerplate with link to stylesheet
+-body with main to hold all funcitonality and h1 title
+-button to add new task which will unhide a form to fill in task info if clicked
+-labels and inputs for task, date, and description
+-submit button for task info
+-close dialog if task is exited 
+-script linking js
+
+CSS:
+-root with colors to use in page
+-display using flex to center
+-button styling to change when selected
+-hidden class to hide with display none when you don't want it to show
+
+JS:
+-grab all the buttons and divs using getElementById on the DOM
+-grabs any tasks from local storage that exist
+-current task object to allow manipulation of the task being entered. 
+-function for adding / updating tasks. finds the index and updates the info via taskObj to caputre the values added to the forms. Checks if it is a new entry before adding to task list and adds it to local storage too.
+-updateContainer function to clear the form and reset the html of the blank form. 
+-function to delete tasks, finds the index of the entered data and removes the data from the array and updates local storage so its gone. 
+-editTask function which updates the data if the task already exists. 
+-reset function to clear fields. 
+-adds event listeners for submissions. 
